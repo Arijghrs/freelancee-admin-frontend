@@ -16,6 +16,7 @@ import AdminAnalytics from "./pages/admin/AdminAnalytics";
 import AdminSecurity from "./pages/admin/AdminSecurity";
 import AdminSettings from "./pages/admin/AdminSettings";
 import NotFound from "./pages/NotFound";
+import Feed from "./pages/admin/Feed";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/login" element={<Login />} />
 
           <Route path="/" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+          <Route path="/feed" element={<AdminLayout><Feed /></AdminLayout>} />
           <Route path="/users" element={<AdminLayout><AdminUsers /></AdminLayout>} />
           <Route path="/projects" element={<AdminLayout><AdminProjects /></AdminLayout>} />
           <Route path="/payments" element={<AdminLayout><AdminPayments /></AdminLayout>} />

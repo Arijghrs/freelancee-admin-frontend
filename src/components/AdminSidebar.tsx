@@ -1,18 +1,18 @@
 import {
   LayoutDashboard, Users, Briefcase, CreditCard, FileText, Scale,
-  MessageSquare, Settings, Shield, BarChart3, LogOut,
+  MessageSquare,Home, Settings, Shield, BarChart3, LogOut,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarHeader, SidebarFooter, useSidebar,
 } from "@/components/ui/sidebar";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+
 import { useNavigate } from "react-router-dom";
 
 const mainNav = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
-  { title: "Feedpage", url: "/feed", icon: LayoutDashboard },
+  { title: "Feedpage", url: "/feed", icon: Home },
   { title: "Users", url: "/users", icon: Users },
   { title: "Projects", url: "/projects", icon: Briefcase },
   { title: "Payments", url: "/payments", icon: CreditCard },
