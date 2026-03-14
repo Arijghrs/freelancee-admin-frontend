@@ -1,6 +1,7 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AdminSidebar } from "@/components/AdminSidebar";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { NotificationBell } from "@/components/ui/NotificationBell";
 
 export function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -14,7 +15,11 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
               Admin Panel
             </span>
             <div className="flex-1" />
-            <div className="flex items-center gap-3">
+
+            {/* Bell sits here — between title spacer and avatar */}
+            <NotificationBell />
+
+            <div className="flex items-center gap-3 ml-3">
               <div className="flex flex-col items-end">
                 <p className="text-sm font-medium text-foreground">Admin</p>
                 <p className="text-[11px] text-muted-foreground">Platform Owner</p>
