@@ -16,7 +16,6 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
             </span>
             <div className="flex-1" />
 
-            {/* Bell sits here — between title spacer and avatar */}
             <NotificationBell />
 
             <div className="flex items-center gap-3 ml-3">
