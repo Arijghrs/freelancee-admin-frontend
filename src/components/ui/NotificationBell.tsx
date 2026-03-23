@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+
 
 type NotifType = "dispute" | "payment" | "flagged" | "project";
 
@@ -17,7 +17,7 @@ interface Notification {
   read: boolean;
 }
 
-// ─── Config ───────────────────────────────────────────────────────────────────
+
 
 const TYPE_CONFIG: Record<NotifType, {
   icon: React.ElementType;
@@ -51,7 +51,7 @@ const TYPE_CONFIG: Record<NotifType, {
   },
 };
 
-// ─── Mock data ────────────────────────────────────────────────────────────────
+
 
 const mockNotifications: Notification[] = [
   { id: "1", type: "flagged",  title: "Post flagged",        description: "Alex Rivera's post contains a WhatsApp link.",        timeAgo: "2m ago",  read: false },
@@ -64,7 +64,7 @@ const mockNotifications: Notification[] = [
   { id: "8", type: "project",  title: "New project created", description: "Project 'API Integration' was posted by DevCorp.",  timeAgo: "2d ago",  read: true  },
 ];
 
-// ─── NotificationItem ─────────────────────────────────────────────────────────
+
 
 function NotificationItem({
   notif,
@@ -115,7 +115,7 @@ function NotificationItem({
   );
 }
 
-// ─── NotificationBell ─────────────────────────────────────────────────────────
+
 
 export function NotificationBell() {
   const [notifications, setNotifications] = useState<Notification[]>(mockNotifications);
